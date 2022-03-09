@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4a78539066a848f9936cca745a08e532 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    
+                <style>
+                    .leaflet-image-layer {
+                        /* old android/safari*/
+                        image-rendering: -webkit-optimize-contrast;
+                        image-rendering: crisp-edges; /* safari */
+                        image-rendering: pixelated; /* chrome */
+                        image-rendering: -moz-crisp-edges; /* firefox */
+                        image-rendering: -o-crisp-edges; /* opera */
+                        -ms-interpolation-mode: nearest-neighbor; /* ie */
+                    }
+                </style>
+            
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4a78539066a848f9936cca745a08e532" ></div>
+        
+</body>
+<script>    
+    
+            var map_4a78539066a848f9936cca745a08e532 = L.map(
+                "map_4a78539066a848f9936cca745a08e532",
+                {
+                    center: [51.507322, -0.127647],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5993722ae6b54c9c80785cc3243f3e74 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 13, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4a78539066a848f9936cca745a08e532);
+        
+    
+            var image_overlay_5ca81d9ff1824b22a13a086be36bd17d = L.imageOverlay(
+                "https://upload.wikimedia.org/wikipedia/commons/3/30/1923_Geographica_Pocket_Map_of_London%2C_England_-_Geographicus_-_London-geographica-1923.jpg",
+                [[51.545001, -0.246949], [51.46617, -0.054742]],
+                {}
+            ).addTo(map_4a78539066a848f9936cca745a08e532);
+        
+    
+            var marker_ab2286422c5a4603ad729373ae3155dd = L.marker(
+                [51.5073219, -0.1276474],
+                {}
+            ).addTo(map_4a78539066a848f9936cca745a08e532);
+        
+    
+            var icon_ac931e3e2f2f4146b63db5d509181c46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_ab2286422c5a4603ad729373ae3155dd.setIcon(icon_ac931e3e2f2f4146b63db5d509181c46);
+        
+    
+            marker_ab2286422c5a4603ad729373ae3155dd.bindTooltip(
+                `<div>
+                     London
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_85f0d4b927dd44c5ac851c45f372604b = L.marker(
+                [51.51929365, -0.12801772178494725],
+                {}
+            ).addTo(map_4a78539066a848f9936cca745a08e532);
+        
+    
+            var icon_d6ec75bbba7e4ba9a4ebc2db53800563 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_85f0d4b927dd44c5ac851c45f372604b.setIcon(icon_d6ec75bbba7e4ba9a4ebc2db53800563);
+        
+    
+            marker_85f0d4b927dd44c5ac851c45f372604b.bindTooltip(
+                `<div>
+                     the British Museum
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7fa9a83e18504091be747ee3a5578c17 = L.marker(
+                [51.51378715, -0.09845055141832956],
+                {}
+            ).addTo(map_4a78539066a848f9936cca745a08e532);
+        
+    
+            var icon_11281783006d48a1a3e8fc94572e7da3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_7fa9a83e18504091be747ee3a5578c17.setIcon(icon_11281783006d48a1a3e8fc94572e7da3);
+        
+    
+            marker_7fa9a83e18504091be747ee3a5578c17.bindTooltip(
+                `<div>
+                     St. Paul's
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e516d9963f044609aa4dbdc133ae69a3 = L.marker(
+                [51.5074889, -0.16223668308067218],
+                {}
+            ).addTo(map_4a78539066a848f9936cca745a08e532);
+        
+    
+            var icon_6ac133b92aea4749afb544d557a7b84d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_e516d9963f044609aa4dbdc133ae69a3.setIcon(icon_6ac133b92aea4749afb544d557a7b84d);
+        
+    
+            marker_e516d9963f044609aa4dbdc133ae69a3.bindTooltip(
+                `<div>
+                     Hyde Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6243bfe039344caa266ebb2c2c54645 = L.marker(
+                [51.519598200000004, -0.11372660000000001],
+                {}
+            ).addTo(map_4a78539066a848f9936cca745a08e532);
+        
+    
+            var icon_4d5f3b9f0b304ddeaa80f78c47e3c51f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_b6243bfe039344caa266ebb2c2c54645.setIcon(icon_4d5f3b9f0b304ddeaa80f78c47e3c51f);
+        
+    
+            marker_b6243bfe039344caa266ebb2c2c54645.bindTooltip(
+                `<div>
+                     Holborn
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_654c451579df421d8c714632b5e50366 = L.marker(
+                [51.561096500000005, -0.2350489],
+                {}
+            ).addTo(map_4a78539066a848f9936cca745a08e532);
+        
+    
+            var icon_9256154a87a2492aa13369fdc0cc174c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_654c451579df421d8c714632b5e50366.setIcon(icon_9256154a87a2492aa13369fdc0cc174c);
+        
+    
+            marker_654c451579df421d8c714632b5e50366.bindTooltip(
+                `<div>
+                     Neville's Court
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a5d5897b7404a4c8d58f69d0339be3c = L.marker(
+                [51.4625524, -0.2167462],
+                {}
+            ).addTo(map_4a78539066a848f9936cca745a08e532);
+        
+    
+            var icon_c93e7b30ee2e4e779ff25079b9791117 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_8a5d5897b7404a4c8d58f69d0339be3c.setIcon(icon_c93e7b30ee2e4e779ff25079b9791117);
+        
+    
+            marker_8a5d5897b7404a4c8d58f69d0339be3c.bindTooltip(
+                `<div>
+                     Putney
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ceb1ea8af2fd436794ed6f8cf8defc43 = L.marker(
+                [51.5461775, -0.1566874],
+                {}
+            ).addTo(map_4a78539066a848f9936cca745a08e532);
+        
+    
+            var icon_203fa39078a542a3ba91e2cad7a3bdcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_ceb1ea8af2fd436794ed6f8cf8defc43.setIcon(icon_203fa39078a542a3ba91e2cad7a3bdcc);
+        
+    
+            marker_ceb1ea8af2fd436794ed6f8cf8defc43.bindTooltip(
+                `<div>
+                     Haverstock Hill
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a5064970af14f8a900505f4131c2285 = L.marker(
+                [51.511808200000004, -0.1324287],
+                {}
+            ).addTo(map_4a78539066a848f9936cca745a08e532);
+        
+    
+            var icon_2b9e59cdbd064672b213322008adf54c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_5a5064970af14f8a900505f4131c2285.setIcon(icon_2b9e59cdbd064672b213322008adf54c);
+        
+    
+            marker_5a5064970af14f8a900505f4131c2285.bindTooltip(
+                `<div>
+                     Shaftesbury Avenue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22bb5dc9679a40c285da2eaed2d304ce = L.marker(
+                [51.52579805, -0.1202163132903168],
+                {}
+            ).addTo(map_4a78539066a848f9936cca745a08e532);
+        
+    
+            var icon_023c6520d37f466c8c85c27d12957ae1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_22bb5dc9679a40c285da2eaed2d304ce.setIcon(icon_023c6520d37f466c8c85c27d12957ae1);
+        
+    
+            marker_22bb5dc9679a40c285da2eaed2d304ce.bindTooltip(
+                `<div>
+                     the Foundling Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f95f4830aeda40c6b70a31cdbe4113cf = L.marker(
+                [51.5117787, -0.13112349999999998],
+                {}
+            ).addTo(map_4a78539066a848f9936cca745a08e532);
+        
+    
+            var icon_877c11e64c7e4ba19594d239c22a0179 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "none", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_f95f4830aeda40c6b70a31cdbe4113cf.setIcon(icon_877c11e64c7e4ba19594d239c22a0179);
+        
+    
+            marker_f95f4830aeda40c6b70a31cdbe4113cf.bindTooltip(
+                `<div>
+                     Gerrard Street
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
